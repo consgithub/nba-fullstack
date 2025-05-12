@@ -1,26 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router } from 'react-router-dom';
+// import Navbar from './components/layout/Navbar';
+// import Spinner from './components/ui/Spinner';
 import './App.css';
 
-function App() {
+// Lazy-loaded components
+// const Dashboard = lazy(() => import('./pages/Dashboard'));
+// const TrendAnalysis = lazy(() => import('./pages/TrendAnalysis'));
+// const NotFound = lazy(() => import('./pages/NotFound'));
+
+const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div className="app">
+        <h1>NBA Shot Visualization</h1>
+        <p>Testing with Router</p>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;

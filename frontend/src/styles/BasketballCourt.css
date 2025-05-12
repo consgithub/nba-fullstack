@@ -1,0 +1,22 @@
+.basketball-court-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.basketball-court {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #eee;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .basketball-court-container {
+    padding: 10px;
+  }
+}

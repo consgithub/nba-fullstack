@@ -1,0 +1,83 @@
+.trend-analysis {
+  padding: 20px 0;
+}
+
+.trend-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.trend-header h1 {
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.trend-header p {
+  max-width: 700px;
+  margin: 0 auto 20px;
+  color: #666;
+}
+
+.trend-charts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.chart-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.chart-container h2 {
+  color: var(--primary-color);
+  margin-bottom: 5px;
+}
+
+.chart-container p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.trend-insights {
+  margin-top: 20px;
+  background-color: var(--light-gray);
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.trend-insights h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.trend-insights ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.trend-insights li {
+  margin-bottom: 8px;
+}
+
+.trend-insights li:last-child {
+  margin-bottom: 0;
+}
+
+.no-data-message {
+  text-align: center;
+  padding: 40px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* For larger screens, display charts side by side */
+@media (min-width: 992px) {
+  .trend-charts {
+    grid-template-columns: 1fr 1fr;
+  }
+}

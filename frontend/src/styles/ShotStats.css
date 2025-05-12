@@ -1,0 +1,120 @@
+.shot-stats {
+  width: 100%;
+}
+
+.shot-stats h2 {
+  color: var(--primary-color);
+  margin-bottom: 15px;
+  font-size: 1.5rem;
+}
+
+.shot-stats h3 {
+  color: var(--dark-gray);
+  margin: 20px 0 10px;
+  font-size: 1.2rem;
+}
+
+.stats-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-item {
+  flex: 1;
+  min-width: 200px;
+  background-color: var(--light-gray);
+  padding: 15px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stat-label {
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+.stat-value {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.zone-stats {
+  margin-bottom: 25px;
+}
+
+.zone-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.zone-table th {
+  text-align: left;
+  padding: 10px;
+  border-bottom: 2px solid var(--border-color);
+  font-weight: 600;
+  color: var(--dark-gray);
+}
+
+.zone-table td {
+  padding: 12px 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.zone-color {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.percentage-bar-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.percentage-bar {
+  height: 10px;
+  border-radius: 5px;
+  min-width: 4px;
+  margin-right: 10px;
+}
+
+.shot-insights {
+  background-color: var(--light-gray);
+  border-radius: 6px;
+  padding: 15px;
+}
+
+.shot-insights h3 {
+  margin-top: 0;
+}
+
+.shot-insights ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.shot-insights li {
+  margin-bottom: 8px;
+}
+
+.shot-insights li:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .zone-table {
+    font-size: 0.9rem;
+  }
+  
+  .stat-item {
+    min-width: 100%;
+  }
+}

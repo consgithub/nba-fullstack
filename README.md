@@ -1,7 +1,6 @@
-@"
 # NBA Full-Stack Project
 
-A full-stack application for NBA data analysis and visualization.
+A full-stack application for NBA data analysis and visualisation.
 
 ## Technology Stack
 
@@ -11,4 +10,3 @@ A full-stack application for NBA data analysis and visualization.
 ## Project Status
 
 🚧 Under construction - Initial setup phase
-"@ | Out-File -FilePath README.md -Encoding utf8

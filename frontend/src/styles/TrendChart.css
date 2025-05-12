@@ -1,0 +1,50 @@
+.trend-chart {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.trend-tooltip {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  min-width: 180px;
+}
+
+.trend-tooltip-label {
+  margin: 0 0 8px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 5px;
+}
+
+.trend-tooltip-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.trend-tooltip-item {
+  display: flex;
+  align-items: center;
+  font-size: 0.9rem;
+}
+
+.trend-tooltip-color {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.trend-tooltip-name {
+  margin-right: 5px;
+  font-weight: 500;
+}
+
+.trend-tooltip-value {
+  font-weight: 600;
+}
