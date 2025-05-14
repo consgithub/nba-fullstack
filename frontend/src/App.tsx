@@ -1,15 +1,17 @@
 import React, { lazy, Suspense } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/layout/Navbar';
-import Spinner from './components/ui/Spinner';
+// Try with explicit file extensions
+import Navbar from './components/layout/Navbar.tsx';
+import Spinner from './components/ui/Spinner.tsx';
 import './App.css';
 
-// Lazy-loaded components
-const Dashboard = lazy(() => import('./pages/Dashboard'));
-const TrendAnalysis = lazy(() => import('./pages/TrendAnalysis'));
-const NotFound = lazy(() => import('./pages/NotFound'));
+// For lazy-loaded components
+const Dashboard = lazy(() => import('./pages/Dashboard.tsx'));
+const TrendAnalysis = lazy(() => import('./pages/TrendAnalysis.tsx'));
+const NotFound = lazy(() => import('./pages/NotFound.tsx'));
 
-const App: React.FC = () => {
+// Remove the React.FC type annotation as it might be causing issues with React 19
+function App() {
   return (
     <Router>
       <div className="app">
@@ -26,6 +28,6 @@ const App: React.FC = () => {
       </div>
     </Router>
   );
-};
+}
 
 export default App;
